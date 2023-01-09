@@ -1,0 +1,25 @@
+server:
+  port: 8082
+
+Spring:
+  application:
+    name: cazait-prod
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      jdbc-url: jdbc:mysql://cazait-rds.ceaz787lkdus.ap-northeast-2.rds.amazonaws.com:3306/초기db??serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+      username: root
+      password: Cazait0214!
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  level:
+    org.hibernate.sql: debug
+    org.hibernate.orm.jdbc.bind: trace
