@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+Spring:
+  application:
+    name: cazait-local
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      jdbc-url: jdbc:mysql://cazait-rds.ceaz787lkdus.ap-northeast-2.rds.amazonaws.com:3306/초기db??serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+      username: root
+      password: Cazait0214!
